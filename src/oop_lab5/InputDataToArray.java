@@ -31,6 +31,7 @@ public class InputDataToArray {
             num[i] = scanner.nextInt();
         }
         return num;
+        ////////////////////
     }
 }//class
 

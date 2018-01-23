@@ -41,19 +41,19 @@ public class Student {
     public  String getMajor(){
         return  this.major;
     }
-    public void setMajor(){
+    public void setMajor(String major){
         this.major=major;
     }
     public  String getFaculty() {
         return this.faculty;
     }
-    public void setFaculty(){
+    public void setFaculty(String faculty){
         this.faculty=faculty;
     }
     public  String getName() {
         return this.name;
     }
-    public void setName(){
+    public void setName(String name){
         this.name = name;
     }
 }//cless

@@ -18,10 +18,10 @@ public class StudentApp {
 
 
         Student student3 = new Student();
-       // student3 = inputData(student3);
-            //System.out.println(student3.toString());
+        student3 = inputData(student3);
+            System.out.println(student3.toString());
             System.out.println(student1.gender);
-        System.out.println(Student.gender);
+        //System.out.println(Student.gender);
     }//main
     private static Student inputData(Student  s) {
         Scanner scanner = new Scanner(System.in);

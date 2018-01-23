@@ -16,8 +16,7 @@ public class mySuperCar {
         SuperCar superCar3 = new SuperCar();
         superCar3 = inputData(superCar3);
         System.out.println(superCar3.toString());
-        //   System.out.println(student1.gender);
-        // System.out.println(Student.gender);
+
     }//main
 
     private static SuperCar inputData(SuperCar s) {

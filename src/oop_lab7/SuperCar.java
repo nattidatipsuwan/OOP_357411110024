@@ -1,65 +1,49 @@
 package oop_lab7;
 
 public class SuperCar {
+    private String carBrand;
+    private String carColor;
+    private String engSize;
 
-    @Override
-    public String toString() {
+    public SuperCar() {
+    }
+
+    public SuperCar(String b, String c, String e) {
+        this.carBrand = b;
+        this.carColor = c;
+        this.engSize = e;
+    }
+
+    public String getSuperCarInfo() {
         return "SuperCar{" +
-                "brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
-                ", enginesize='" + enginesize + '\'' +
-                ", maxspeede='" + maxspeede + '\'' +
-                ", country='" + country + '\'' +
+                "carBrand='" + carBrand + '\'' +
+                ", carColor='" + carColor + '\'' +
+                ", engSize='" + engSize + '\'' +
                 '}';
     }
 
-    private String brand;
-    private String color;
-    private String enginesize;
-    private String maxspeede;
-    private String country;
-    //constructor
-    //Default contructor
-    public SuperCar(){}
-    //create constructor by owner
-    public  SuperCar(String b,String c,String e, String m,String cou){
-        //assign data to class properties
-        this.brand = b;
-        this.color = c;
-        this.enginesize = e;
-        this.maxspeede = m;
-        this.country = cou;
-    }
-    //getter and setter methods
 
-    public  String  getBrand(){
-        return this.brand;
+    public String getCarBrand() {
+        return carBrand;
     }
-    public  void setBrand(String brand){
-        this.brand =brand;
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
-    public  String getColor(){
-        return  this.color;
+
+    public String getEngSize() {
+        return engSize;
     }
-    public void setColor(String color ){
-        this.color=color;
+
+    public void setEngSize(String engSize) {
+        this.engSize = engSize;
     }
-    public  String getEnginesize() {
-        return this.enginesize;
+
+    public String getCarColor() {
+        return carColor;
     }
-    public void setEnginesize(String enginesize){
-        this.enginesize=enginesize;
-    }
-    public  String getMaxspeede() {
-        return this.maxspeede;
-    }
-    public void setMaxspeede(String maxspeede){
-        this.maxspeede = maxspeede;
-    }
-    public  String getCountry() {
-        return this.country;
-    }
-    public void setCountry(String country) {
-        this.country = country;
+
+    public void setCarColor(String carColor) {
+        this.carColor = carColor;
     }
 }
